@@ -5,6 +5,10 @@ int main() {
   int pos = 0;
   Tarefa tarefas[TOTAL];
 
+int e = carregar (tarefas, TOTAL, &pos);
+  if (e != 0)
+  pos = 0;
+
   int opcao;
   do {
     printf("\nMenu principal\n");

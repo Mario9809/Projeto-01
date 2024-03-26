@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int criar(Tarefa tarefas[], int *pos) {
+Erro criar(Tarefa tarefas[], int *pos) {
   if (*pos >= TOTAL)
     return 1;
 
@@ -19,7 +19,7 @@ int criar(Tarefa tarefas[], int *pos) {
 
   return 0;
 }
-int deletar(Tarefa tarefas[], int *pos) {
+Erro deletar(Tarefa tarefas[], int *pos) {
   if (*pos == 0)
     return 1;
 
@@ -40,7 +40,7 @@ int deletar(Tarefa tarefas[], int *pos) {
 
   return 0;
 }
-int listar(Tarefa tarefas[], int pos) {
+Erro listar(Tarefa tarefas[], int pos) {
   if (pos == 0)
     return 1;
 
@@ -53,11 +53,11 @@ int listar(Tarefa tarefas[], int pos) {
 
   return 0;
 }
-int salvar(Tarefa tarefas[], int total, int pos) {
+Erro salvar(Tarefa tarefas[], int total, int pos) {
   printf("funcao de salvar tarefas\n");
   return 0;
 }
-int carregar(Tarefa tarefas[], int total, int pos) {
+Erro carregar(Tarefa tarefas[], int total, int pos) {
   printf("funcao de carregar tarefas\n");
   return 0;
 }
